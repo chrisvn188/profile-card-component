@@ -1,21 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Profile card component</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Profile card component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-  Victor Crest
+  <body>
+    <article class="card">
+      <div class="card__header">
+        <img src="images/bg-pattern-card.svg" alt="An background pattern" class="card__bg-img" role="presentation">
+      </div>
+      <div class="card__body">
+        <figure class="card__figure">
+          <img
+            src="images/image-victor.jpg"
+            alt="Image of Victor"
+            class="card__img"
+          />
+        </figure>
+        <h2 class="card__heading">
+          <span class="card__name">Victor Crest</span>
+          <span class="card__age">26</span>
+        </h2>
+        <p class="card__location">London</p>
+      </div>
+      <hr class="card__line">
+        <div class="card__footer">
+          <ul class="card__stat-list">
+            <li class="card__stat-item">
+              <span class="card__stat-number">80K</span>
+              <span class="card__stat-label">Followers</span>
+            </li>
+            <li class="card__stat-item">
+              <span class="card__stat-number">803K</span>
+              <span class="card__stat-label">Likes</span>
+            </li>
+            <li class="card__stat-item">
+              <span class="card__stat-number">1.4K</span>
+              <span class="card__stat-label">Photos</span>
+            </li>
+          </div>
+      </div>
+    </article>
+    <!-- Victor Crest
   26
   London
 
@@ -26,10 +62,6 @@
   Likes
 
   1.4K
-  Photos
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+  Photos -->
+  </body>
 </html>
